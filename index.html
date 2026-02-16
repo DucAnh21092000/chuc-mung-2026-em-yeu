@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./css/coundown.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <!-- SCREEN 1 -->
+    <div class="screen" id="screen1">
+        <div class="title">Một món quà nhỏ dành cho Bé Nhỏ Hiền xinh đẹp của anh 💗</div>
+        <button class="btn" id="openBtn">🎁 Bấm vào đây</button>
+    </div>
+
+    <!-- SCREEN 2 -->
+    <div class="screen" id="screen2">
+        <div class="container">
+            <h1>🌸 Tết 2026 bên em 🌸</h1>
+            <div class="message">Anh đang đếm từng ngày được ở cạnh em Hiền xinh đẹp của anh💕</div>
+            <div class="countdown" id="countdown"></div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="test()">
+            Mở quà thôi nàooooooo
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Workdate in Ru:tine Coffee</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="message-modal">
+                        Tôi với eiu của tôi hiện tại chưa có ảnh chụp chung nhưng chúng tôi có video quay
+                        chung với nhau nè.
+                    </p>
+                    <video height="350" id="video-modal" src="video/workdate.mp4" controls accesskey="p"
+                        width="100%"></video>
+                    <p id="comment-modal">
+                        Xem xong video có thể thấy 2 chúng tôi đã vui và cười với nhau nhiều như nào
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-pink" data-bs-dismiss="modal">
+                        Đóng
+                    </button>
+                    <button type="button" class="btn btn-back d-none" id="preBtn" onclick="preMessage()">
+                        Quay lại
+                    </button>
+
+                    <button type="button" class="btn btn-next" id="nextBtn" onclick="nextMessage()">
+                        Tiếp tục
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/countdown.js"></script>
+    <script src="js/message.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Nút Quay lại - trắng viền hồng */
+.btn-back {
+  background: #ffffff;
+  color: #e8899e;
+  border: 2px solid #f3a6b5;
+  border-radius: 25px;
+  padding: 8px 22px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #fce4ea;
+  color: #d96b84;
+  transform: translateY(-2px);
+}
+
+/* Nút Tiếp tục - xanh nổi bật */
+.btn-next {
+  background: linear-gradient(135deg, #2b7cff, #1e5edb);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 24px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(43, 124, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-next:hover {
+  background: linear-gradient(135deg, #1e5edb, #174ab3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(30, 94, 219, 0.5);
+}
+
+.btn-next:active,
+.btn-back:active {
+  transform: scale(0.96);
+}
