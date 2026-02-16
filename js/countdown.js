@@ -19,7 +19,7 @@ document.getElementById("openBtn").addEventListener("click", function () {
 });
 
 // COUNTDOWN
-const tetDate = new Date("2026-02-16T17:20:00");
+const tetDate = new Date("2026-02-16T18:30:00");
 let countdown = document.getElementById("countdown")
 
 const countdownInterval = setInterval(updateCountdown, 1000);
