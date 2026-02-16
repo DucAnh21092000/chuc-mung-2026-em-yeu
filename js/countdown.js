@@ -19,7 +19,7 @@ document.getElementById("openBtn").addEventListener("click", function () {
 });
 
 // COUNTDOWN
-const tetDate = new Date("2026-02-16T18:38:00");
+const tetDate = new Date("2026-02-17T00:00:00");
 let countdown = document.getElementById("countdown")
 
 const countdownInterval = setInterval(updateCountdown, 1000);
@@ -41,12 +41,15 @@ function updateCountdown() {
 
 
     if (isUpComing) {
-        window.alert('Còn 2 phút nữa là tới giao thừa rồiii. Chuẩn bị đón giao thừa thôi nào eiuuu')
+        window.alert('Còn 2 phút nữa là tới giao thừa rồiii. Chuẩn bị đón giao thừa thôi nào em yêuuu')
         isUpComing = false
     }
 
     if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
         localStorage.setItem("isDone", true);
+    }
+    else {
+        localStorage.setItem("isDone", false);
     }
 
     countdown = document.getElementById("countdown");
