@@ -88,7 +88,7 @@ const test = () => {
     const nextBtn = document.getElementById('nextBtn')
     const isDone = localStorage.getItem("isDone")
 
-    if (isDone == true) {
+    if (isDone) {
         nextBtn.classList.add('d-none')
         preBtn.classList.add('d-none')
         modalTitle.innerHTML = finalMessage[0].title
